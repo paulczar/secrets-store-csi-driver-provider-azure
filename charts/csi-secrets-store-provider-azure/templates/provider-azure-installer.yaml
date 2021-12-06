@@ -93,7 +93,7 @@ spec:
       volumes:
         - name: provider-vol
           hostPath:
-            path: "/etc/kubernetes/secrets-store-csi-providers"
+            path: "/run/custom-csi"
         {{- if not .Values.driverWriteSecrets }}
         - name: mountpoint-dir
           hostPath:
