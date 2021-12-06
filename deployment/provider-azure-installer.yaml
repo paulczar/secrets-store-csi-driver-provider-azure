@@ -70,6 +70,6 @@ spec:
       volumes:
         - name: providervol
           hostPath:
-            path: "/etc/kubernetes/secrets-store-csi-providers"
+            path: "/run/custom-csi"
       nodeSelector:
         kubernetes.io/os: linux
